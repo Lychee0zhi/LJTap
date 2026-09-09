@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "灵境 · 新标签页",
+  "version": "1.0.0",
+  "description": "简约诗意的新标签页，支持多引擎搜索、搜索建议与主题配色",
+  "chrome_url_overrides": {
+    "newtab": "newtab/index.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "https://suggestqueries.google.com/*",
+    "https://api.bing.com/*",
+    "https://suggestion.baidu.com/*",
+    "https://www.sogou.com/*",
+    "https://suggest.yandex.com/*",
+    "https://suggest.yandex.ru/*",
+    "https://ac.duckduckgo.com/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; img-src * data: blob:; media-src * blob:; style-src 'self' 'unsafe-inline'; connect-src *"
+  }
+}

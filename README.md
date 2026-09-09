@@ -1,4 +1,5 @@
 # 灵境 · 新标签页（LJTab）
+<img width="1920" height="917" alt="image" src="https://github.com/user-attachments/assets/a8bdef9f-80f3-463f-99ee-ac577144f5fb" />
 
 一款轻量、原生、注重性能的浏览器新标签页扩展。
 
